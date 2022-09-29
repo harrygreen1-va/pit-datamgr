@@ -51,34 +51,34 @@ public class Pet extends BaseEntity{
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet")
     private Set<Visit> visits = new HashSet<>();
     
-	public String getName()
-	{
-		return name;
-	}
+//	public String getName()
+//	{
+//		return name;
+//	}
 
-	public PetType getPetType()
-	{
-		return petType;
-	}
+//	public PetType getPetType()
+//	{
+//		return petType;
+//	}
 
-	public Owner getOwner()
-	{
-		return owner;
-	}
+//	public Owner getOwner()
+//	{
+//		return owner;
+//	}
 
-	public LocalDate getBirthDate()
-	{
-		return birthDate;
-	}
+//	public LocalDate getBirthDate()
+//	{
+//		return birthDate;
+//	}
 
-	public Set<Visit> getVisits()
-	{
-		return visits;
-	}
+//	public Set<Visit> getVisits()
+//	{
+//		return visits;
+//	}
 
-	public void setPetType(PetType petType)
-	{
-		this.petType = petType;
-	}
+//	public void setPetType(PetType petType)
+//	{
+//		this.petType = petType;
+//	}
 
 }

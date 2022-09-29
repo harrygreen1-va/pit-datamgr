@@ -76,9 +76,9 @@ public class Owner extends Person {
         return null;
     }
 
-	public Set<Pet> getPets()
-	{
-		return pets;
-	}
+//	public Set<Pet> getPets()
+//	{
+//		return pets;
+//	}
 
 }

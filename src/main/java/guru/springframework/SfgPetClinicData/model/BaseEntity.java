@@ -36,13 +36,13 @@ public class BaseEntity implements Serializable {
         return this.id == null;
     }
 
-	public Long getId()
-	{
-		return id;
-	}
+//	public Long getId()
+//	{
+//		return id;
+//	}
 
-	public void setId(Long id)
-	{
-		this.id = id;
-	}
+//	public void setId(Long id)
+//	{
+//		this.id = id;
+//	}
 }
