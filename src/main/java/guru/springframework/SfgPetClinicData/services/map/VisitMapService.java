@@ -24,6 +24,7 @@ public class VisitMapService extends AbstractMapService<Visit, Long> implements 
         return super.findById(id);
     }
 
+    // CRUD
     @Override
     public Visit save(Visit visit) {
 
@@ -32,7 +33,13 @@ public class VisitMapService extends AbstractMapService<Visit, Long> implements 
             throw new RuntimeException("Invalid Visit");
         }
 
-        return super.save(visit);
+        return save(visit);
+    }
+    
+    // MAP
+    public Visit save(Long id, Visit object)
+    {
+    	return super.save(id, object);
     }
 
     @Override

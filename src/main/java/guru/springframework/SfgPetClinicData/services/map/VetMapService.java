@@ -32,6 +32,7 @@ public class VetMapService extends AbstractMapService<Vet, Long> implements VetS
         return super.findById(id);
     }
 
+    // CRUD
     @Override
     public Vet save(Vet object) {
 
@@ -44,9 +45,16 @@ public class VetMapService extends AbstractMapService<Vet, Long> implements VetS
             });
         }
 
-        return super.save(object);
+        return save(object);
     }
 
+    // MAP
+    @Override
+    public Vet save(Long id, Vet object)
+    {
+    	return super.save(id, object);
+    }
+    
     @Override
     public void delete(Vet object) {
         super.delete(object);

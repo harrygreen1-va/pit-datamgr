@@ -24,9 +24,16 @@ public class SpecialityMapService extends AbstractMapService<Speciality, Long> i
         return super.findById(id);
     }
 
+    // CRUD
     @Override
     public Speciality save(Speciality object) {
-        return super.save(object);
+        return save(object);
+    }
+    
+    // MAP
+    public Speciality save(Long id, Speciality object)
+    {
+    	return super.save(id, object);
     }
 
     @Override

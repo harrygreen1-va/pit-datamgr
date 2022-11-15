@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+import javax.persistence.Id;
+
 /**
  * Created by jt on 7/21/18.
  */
@@ -23,9 +25,17 @@ public class PetMapService extends AbstractMapService<Pet, Long> implements PetS
         return super.findById(id);
     }
 
+    // CRUD
     @Override
     public Pet save(Pet object) {
-        return super.save(object);
+        return save(object);
+    }
+    
+    // MAP
+    @Override
+    public Pet save(Long id, Pet object)
+    {
+    	return super.save(id, object);
     }
 
     @Override
